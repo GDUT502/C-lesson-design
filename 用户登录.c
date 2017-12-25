@@ -10,6 +10,7 @@ void user_login()
 	for( ; ; )
 	{
 		system("cls");//清屏
+		printf("主菜单>>用户登录\n");
 		printf("\n请输入您的用户名：");
 		scanf("%s",name);
 		u_i=findRecord(name,0,1,0);//查找该用户名 

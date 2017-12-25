@@ -26,7 +26,7 @@ int s_u_menu()//用户菜单的选择
 //	while(choice!=0)
 //	{
 		system("cls");//清屏
-		printf("用户菜单\n");
+		printf("主菜单>>用户菜单\n");
 		printf("1.订购商品\n");
 		printf("2.我的订单\n");
 		printf("3.账户信息\n");
