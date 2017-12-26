@@ -22,6 +22,9 @@ int a_saveRecords(int choice)//´¢´æ³É¹¦·µ»Ø1£»
 	}
 	if(choice==3)
 	{
+	/*	printf("%s",o_temp.name);
+		getchar();
+		getchar();*/
 		fwrite(&o_temp,sizeof(OrInfo)*1/*numOrders*/,1,fp);
 		fclose(fp);
 	}

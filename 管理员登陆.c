@@ -15,6 +15,7 @@ void ad_login()
 	//输入用户名 
 	printf("\n\t\t\t O(∩_∩)O      请输入你的用户名>>");
 	scanf("%s",name);
+	if(name[0]=='#') rg_menu();
 	for( ; ; )
 	{
 		i=findRecord(name,0,1,0);
@@ -29,6 +30,7 @@ void ad_login()
 	
 	printf("\n\t\t\t O(∩_∩)O      请输入你的密码>>");
 	scanf("%s",password);
+	if(password[0]=='#') rg_menu();
 	for( ; ; )
 	{
 		if(strcmp(password,records[i].password)!=0)

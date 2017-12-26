@@ -14,6 +14,7 @@ void user_login()
 	//输入用户名 
 	printf("\n\t\t\t O(∩_∩)O      请输入你的用户名>>");
 	scanf("%s",name);
+	if(name[0]=='#') rg_menu();
 	for( ; ; )
 	{
 		u_i=findRecord(name,0,1,0);//查找该用户名 
@@ -29,6 +30,7 @@ void user_login()
 	//输入密码 
 	printf("\n\t\t\t O(∩_∩)O      请输入你的密码>>");
 	scanf("%s",password);
+	if(password[0]=='#') rg_menu();
 	for( ; ; )
 	{
 		

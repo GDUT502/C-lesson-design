@@ -32,8 +32,12 @@ void o_water()//订购商品
 	
 	//把用户的订单添加到用户记录当中 
 	strcpy(o_temp.name,records[i].name);
+/*		printf("%s",o_temp.name);
+		getchar();
+		getchar();*/
 	strcpy(o_temp.phone,records[i].phone);
 	strcpy(o_temp.address,records[i].address);
 	strcpy(o_temp.date,Time);
 	o_temp.total_prices=o_temp.amount*w_records[orderIndex-1].price;
+	o_temp.mark=0;
 }

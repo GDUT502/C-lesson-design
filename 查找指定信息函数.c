@@ -7,7 +7,7 @@
 返回：找到的信息的序号，若找不到则返回-1. 
 */
 int findRecord(char* target,int targetType,int choice,int from)//查找指定信息函数 
-{	
+{
 	int i;
 	if(choice==1)
 	{

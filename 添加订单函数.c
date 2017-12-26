@@ -19,7 +19,9 @@ void add_order()//添加订单函数
 	printf("\t\t\t\t\t**     合计总价:%-.2f 元       \n\n",o_temp.total_prices);
 	printf("\t\t\t\t\t*****************************************\n\n");
 	
-	
+	/*	printf("%s",o_temp.name);
+		getchar();
+		getchar();*/
 	printf("\t\t\t\t O(∩_∩)O      确认下单么？(Y/N)>>");
 	scanf("%s",str);
 	//输入字母检查 
@@ -29,7 +31,7 @@ void add_order()//添加订单函数
 	} 
 	if(str[0]=='y'||str[0]=='Y')
 	{
-		mark=a_saveRecords(3);	
+		mark=a_saveRecords(3);
 	}
 	if(mark==1) 
 	{
