@@ -4,8 +4,8 @@
 CPP      = g++.exe -D__DEBUG__
 CC       = gcc.exe -D__DEBUG__
 WINDRES  = windres.exe
-OBJ      = 主函数.o 登录菜单.o 用户登录.o 文件批量存储函数.o 文件读取函数.o 查找指定信息函数.o 查询指定信息函数.o 用户注册.o 单个文件追加储存函数.o 文件选择函数.o 管理员登陆.o 结束运行函数.o 定义全局变量.o 管理员注册.o 添加商品函数.o 修改当前用户信息函数.o 添加订单函数.o 复制信息函数.o 删除指定信息函数.o 显示所有信息.o 用户菜单.o 修改商品信息函数.o 修改订单信息函数.o 管理员菜单.o 订购商品.o 账户信息界面.o 帮助界面.o 我的订单界面.o 管理商品.o 管理订单.o 管理用户.o 显示用户订单.o 表头信息函数.o 删除指定订单函数.o 清空文本.o 时间.o
-LINKOBJ  = 主函数.o 登录菜单.o 用户登录.o 文件批量存储函数.o 文件读取函数.o 查找指定信息函数.o 查询指定信息函数.o 用户注册.o 单个文件追加储存函数.o 文件选择函数.o 管理员登陆.o 结束运行函数.o 定义全局变量.o 管理员注册.o 添加商品函数.o 修改当前用户信息函数.o 添加订单函数.o 复制信息函数.o 删除指定信息函数.o 显示所有信息.o 用户菜单.o 修改商品信息函数.o 修改订单信息函数.o 管理员菜单.o 订购商品.o 账户信息界面.o 帮助界面.o 我的订单界面.o 管理商品.o 管理订单.o 管理用户.o 显示用户订单.o 表头信息函数.o 删除指定订单函数.o 清空文本.o 时间.o
+OBJ      = 主函数.o 登录菜单.o 用户登录.o 文件批量存储函数.o 文件读取函数.o 查找指定信息函数.o 查询指定信息函数.o 用户注册.o 单个文件追加储存函数.o 文件选择函数.o 管理员登陆.o 结束运行函数.o 定义全局变量.o 管理员注册.o 添加商品函数.o 修改当前用户信息函数.o 添加订单函数.o 复制信息函数.o 删除指定信息函数.o 显示所有信息.o 用户菜单.o 修改商品信息函数.o 修改订单信息函数.o 管理员菜单.o 订购商品.o 账户信息界面.o 帮助界面.o 我的订单界面.o 管理商品.o 管理订单.o 管理用户.o 显示用户订单.o 表头信息函数.o 删除指定订单函数.o 清空文本.o
+LINKOBJ  = 主函数.o 登录菜单.o 用户登录.o 文件批量存储函数.o 文件读取函数.o 查找指定信息函数.o 查询指定信息函数.o 用户注册.o 单个文件追加储存函数.o 文件选择函数.o 管理员登陆.o 结束运行函数.o 定义全局变量.o 管理员注册.o 添加商品函数.o 修改当前用户信息函数.o 添加订单函数.o 复制信息函数.o 删除指定信息函数.o 显示所有信息.o 用户菜单.o 修改商品信息函数.o 修改订单信息函数.o 管理员菜单.o 订购商品.o 账户信息界面.o 帮助界面.o 我的订单界面.o 管理商品.o 管理订单.o 管理用户.o 显示用户订单.o 表头信息函数.o 删除指定订单函数.o 清空文本.o
 LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -g3
 INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
@@ -128,6 +128,3 @@ $(BIN): $(OBJ)
 
 清空文本.o: 清空文本.c
 	$(CC) -c 清空文本.c -o 清空文本.o $(CFLAGS)
-
-时间.o: 时间.c
-	$(CC) -c 时间.c -o 时间.o $(CFLAGS)
