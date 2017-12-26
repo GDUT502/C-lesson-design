@@ -10,6 +10,7 @@ void o_water()//订购商品
 	 
 	printf("\n\t\t\t O(∩_∩)O     请选择需要订购的商品序号>>");
 	scanf("%d",&num);
+	
 	//检查商品序号是否错误 
 	while((num<=0 )|| (num>numWaters)){
 		printf("\n\t\t\t╮(╯﹏╰）╭  订购序号不存在，请从新输入>>");

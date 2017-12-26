@@ -4,7 +4,7 @@ void show_my_o()//显示我的最近五个订单
 {
 	char target[50];
 //	char *p=target;
-	int i,j=0;
+	int i,j=0,m;
 	int k;
 	int choice=3;
 	loadRecords(choice);//先读取所有信息 
@@ -26,7 +26,7 @@ void show_my_o()//显示我的最近五个订单
 			getchar();
 			return ;
 		}
-		showTable(choice);
+		//showTable(choice);
 		while(i!=-1)
 		{
 		//	printf("\n%d.%s\t%s\t%d\t%s",j+1,o_records[i].name,o_records[i].brand,o_records[i].amount,o_records[i].date);
@@ -49,12 +49,14 @@ void show_my_o()//显示我的最近五个订单
 				}
 			}
 		}
-		for(k=0;k<N;k++)
+		printf("\n\t\t\t\t       $$$订单信息$$$  \n"); 
+		printf("  下单用户   商品名称   数量   用户电话       收货地址      下单时间               总价格");
+		for(k=j,m=1;k>=0;k--,m++)
 		{
 			i=o_i[k];
-			printf("\n%d.%s\t%s\t%d\t%s\t%s\t%s",k+1,o_records[i].name,o_records[i].brand,o_records[i].amount,o_records[i].phone,o_records[i].address,o_records[i].date);
+	  printf("\n\n%d.%-s        %-11s%-d      %-s     %-s     %-s    %-5.2f元",m,o_records[i].name,o_records[i].brand,o_records[i].amount,o_records[i].phone,o_records[i].address,o_records[i].date,o_records[i].total_prices);
 		}
-		printf("\n输入回车后继续：");
+		printf("\n输入回车后继续...");
 		getchar();
 		getchar();
 } 

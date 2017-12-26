@@ -13,7 +13,7 @@ void ad_menu()//管理员菜单
 			case 3:ad_user();break;
 			case 9:mark=0;break;
 			case 0:quit();break;
-			default :printf("\n输入错误，请重新选择:\n输入回车后继续");getchar();getchar();
+			default :printf("\n\t\t\t\t╮(╯﹏╰）╭   你输入的操作不存在，请重新输入,输入回车键继续....");getchar();getchar();
 		}
 	}
  } 
@@ -37,10 +37,6 @@ int s_ad_menu()//管理员菜单的选择
 		printf("\t\t\t\t\t**     输入数字进行操作>>");
 		scanf("%d",&choice);
 
-		while(choice != 1 && choice != 2 && choice != 3 && choice != 9 && choice != 0){
-			printf("\n\t\t\t╮(╯﹏╰）╭   你输入的操作不存在，请重新输入>>");
-			scanf("%d",&choice);
-		}
 		return choice;
 //	}
 }

@@ -8,9 +8,9 @@ void add_water()//添加商品品牌
 	scanf("%s",w_temp.brand );
 	printf("\n\t\t\t O(∩_∩)O      请输入商品价格>>");
 	scanf("%f",&w_temp.price );//注意地址符的使用。
-	printf("\n\t\t\t O(∩_∩)O      核对商品信息");
-	showTable(2);
-	printf("\n%s\t%f",w_temp.brand,w_temp.price);
+	printf("\n\t\t\t O(∩_∩)O      核对商品信息\n");
+	printf("\t\t\t\t\t**  商品名称           商品价格  **\n\n");
+	printf("\t\t\t\t\t**  %-8s         %-4.2f元   **\n\n",w_temp.brand,w_temp.price);
 	printf("\n\t\t\t O(∩_∩)O      认保存么？(Y/N)>>");
 	scanf("%s",str);
 	if(str[0]=='y'||str[0]=='Y')

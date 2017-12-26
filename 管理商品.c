@@ -8,7 +8,7 @@ void ad_brand()//管理商品
 	{
 		switch(s_ad_brand())
 		{
-			case 1:system("cls") ;display(choice);break;
+			case 1:system("cls") ;display(2);break;
 			case 2:queryInfo(choice);break;
 			case 3:modify_water();break;
 			case 4:add_water();break;

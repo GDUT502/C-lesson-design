@@ -29,7 +29,7 @@ int s_u_menu()//用户菜单的选择
 		printf("\t\t\t\t\t*************************************\n\n");
 		printf("\t\t\t\t\t** 位置:主菜单->用户菜单           **\n\n");
 		printf("\t\t\t\t\t**       >>>订水管理系统<<<         *\n\n");
-		printf("\t\t\t\t\t**        用户 %s,欢迎您！         **\n\n",records[u_i].name);
+		printf("\t\t\t\t\t**      用户 %s,欢迎您！           **\n\n",records[u_i].name);
 		printf("\t\t\t\t\t**          1.订购商品             **\n\n");
 		printf("\t\t\t\t\t**          2.我的订单             **\n\n");
 		printf("\t\t\t\t\t**          3.账户信息             **\n\n");

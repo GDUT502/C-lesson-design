@@ -14,21 +14,21 @@ void my_order()//我的订单
 			}break;
 			case 2:{
 				show_my_o();
-				printf("请选择你要修改的订单：");
+				printf("\n\t\t\t\t O(∩_∩)O      请选择你要修改的订单>>");	
 				scanf("%d",&j);
 				modify_order(j-1);//修改订单信息函数 
 				break;
 			};break;
 			case 3:{
 				show_my_o();
-				printf("请选择你要删除的订单：");
+				printf("\n\t\t\t\t O(∩_∩)O      请选择你要删除的订单>>");	
 				scanf("%d",&j);
 				removeOrder(j-1);
 				break;
 			};break;
 			case 9:mark=0;break;
 			case 0:quit();break;
-			default :printf("\n输入错误，请重新选择:\n输入回车后继续");getchar();getchar();
+			default :printf("\n\t\t\t\t╮(╯﹏╰）╭   你输入的操作不存在，请重新输入,输入回车键继续....");getchar();getchar();
 		 } 
 	}
 }

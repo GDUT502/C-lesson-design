@@ -19,7 +19,7 @@ void display(int choice)//显示所有表内信息
 		//打印满10个信息后暂停一下 
 		if(i%10==0&&i!=0)
 		{
-			printf("回车后继续...\n") ;
+			printf("\n\t\t\t\t O(∩_∩)O      回车后继续...");
 			getchar();
 			getchar();
 			printf("\n\n");
@@ -46,14 +46,14 @@ void display(int choice)//显示所有表内信息
 		}
 		printf("\t\t\t\t\t************************************\n\n");
 		//打印满10个信息后暂停一下 
-//		if(i%10==0&&i!=0)
-//		{
-//			printf("回车后继续...\n") ;
-//			getchar();
-//			getchar();
-//			printf("\n\n");
-//			showTable(choice);
-//		}
+		if(i%10==0&&i!=0)
+		{
+			printf("回车后继续...\n") ;
+			getchar();
+			getchar();
+			printf("\n\n");
+			showTable(choice);
+		}
 	}
 	if(choice==3) 
 	{
@@ -78,11 +78,11 @@ void display(int choice)//显示所有表内信息
 			printf("\n\n");
 			showTable(choice);
 		}
-		printf("\n回车后继续...\n") ;
-	getchar();
-	getchar();
+		printf("\n\t\t\t O(∩_∩)O      回车后继续...>>");
+		getchar();
+		getchar();
 	}
-	printf("\t\t\t\t\t回车后继续...\n") ;
+	printf("\t\t\t\t\t回车后继续返回上一层...\n") ;
 	getchar();
 	getchar();
 }

@@ -1,8 +1,9 @@
 #include"OW.h" 
+
 void queryInfo(int choice)//查询指定信息函数
 {
 	char target[50];
-	int i,j=0;
+	int i,j=0,m;
 	int k;
 /*	numUsers=0;
 	numWaters=0;
@@ -43,7 +44,7 @@ void queryInfo(int choice)//查询指定信息函数
 		scanf("%s",target);
 		/*w_i*/i=findRecord(target,0/*默认查找方式为商品名*/,choice,0);
 		w_i=i;
-		
+
 		if(i==-1) 
 		{
 			printf("\n\t\t\t╮(╯﹏╰）╭   没有这个商品！");
@@ -52,7 +53,9 @@ void queryInfo(int choice)//查询指定信息函数
 			return ;
 		}
 		//showTable(choice);
-		printf("\n\t\t\t\t\t%s\t%-5.2f元",w_records[i].brand,w_records[i].price);
+		printf("\t\t\t\t\t**  商品名称           商品价格  **\n\n");
+		printf("\t\t\t\t\t**  %-d.%-8s         %-4.2f元   **\n\n",i+1,w_records[i].brand,w_records[i].price);//
+		
 	} 
 	if(choice==3)
 	{
@@ -62,8 +65,8 @@ void queryInfo(int choice)//查询指定信息函数
 		printf("\n\t\t\t╮(╯﹏╰）╭   没有记录可供查找！");
 		return ;
 	}
-		printf("\n请输入欲查询的下单用户名：");
-		printf("\n\t\t\t\t\t**   请输入欲查询的商品名称>>");
+	
+		printf("\n\t\t\t\t\t**   请输入欲修改订单的用户名>>");
 		scanf("%s",target);
 		/*o_i*/i=findRecord(target,0/*默认查找方式为用户名*/,choice,0);
 		j=0;
@@ -98,10 +101,12 @@ void queryInfo(int choice)//查询指定信息函数
 				}
 			}
 		}
-		for(k=0;k<N;k++)
+		printf("\n\t\t\t\t       $$$订单信息$$$  \n"); 
+		printf("  下单用户   商品名称   数量   用户电话       收货地址      下单时间               总价格");
+		for(k=j,m=1;k>=0;k--,m++)
 		{
 			i=o_i[k];
-			printf("\n%d.%s\t%s\t%d\t%s\t%s\t%s",k+1,o_records[i].name,o_records[i].brand,o_records[i].amount,o_records[i].phone,o_records[i].address,o_records[i].date);
+	  printf("\n\n%d.%-s        %-11s%-d      %-s     %-s     %-s    %-5.2f元",m,o_records[i].name,o_records[i].brand,o_records[i].amount,o_records[i].phone,o_records[i].address,o_records[i].date,o_records[i].total_prices);
 		}
 	}
 	printf("\n\t\t\t\t\t输入回车后继续...."); 

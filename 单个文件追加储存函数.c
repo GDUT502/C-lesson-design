@@ -6,10 +6,10 @@ int a_saveRecords(int choice)//储存成功返回1；
 	fname=select_file(choice);//返回文件名 
 	if((fp=fopen(fname,"ab"))==NULL)
 	{
-		printf("文件储存失败！\n");
+		printf("\n\t\t\t╮(╯﹏╰）╭   文件储存失败！");
 		return -1;
 	}
-	printf("\n存文件中。。。\n");
+	//printf("\n存文件中。。。\n");
 	if(choice==1||choice==4)
 	{
 		fwrite(&temp,sizeof(UserInfo)*1/*numUsers*/,1,fp);
@@ -25,7 +25,7 @@ int a_saveRecords(int choice)//储存成功返回1；
 		fwrite(&o_temp,sizeof(OrInfo)*1/*numOrders*/,1,fp);
 		fclose(fp);
 	}
-	printf("文件追加储存成功\n");
+	printf("\n\t\t\t\t 罒ω罒      √√√√√储存成功!√√√√√\n");
 //	printf("%d条文件储存成功，请继续操作。\n",numUsers);
 //	savedTag=0;
 	return 1;
