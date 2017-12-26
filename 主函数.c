@@ -35,12 +35,12 @@ int main()
 	printf("\n");
 	printf("\t\t\t\t\t********************************************\n\n");
 	printf("\t\t\t\t\t*           >>>订水管理系统<<<             *\n\n");
-	printf("\t\t\t\t\t*             欢迎使用本系统               *\n\n");
+	printf("\t\t\t\t\t*  O(∩_∩)O   欢迎使用本系统   O(∩_∩)O  *\n\n");
 	printf("\t\t\t\t\t*             指导老师:张  静              *\n\n");
 	printf("\t\t\t\t\t*   16级电子一班C语言课程设计 第五小组     *\n\n");
 	printf("\t\t\t\t\t*  郭冰冰、杜均锋、陈振森、陈振杰、陈敏珊  *\n\n");
 	printf("\t\t\t\t\t********************************************\n\n");
-	printf("\n回车后进入系统。。。");
+	printf("\t\t\t\t\t回车后进入系统...\n\n");
 	getchar();
 	rg_menu();
 }

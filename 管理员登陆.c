@@ -11,7 +11,7 @@ void ad_login()
 	for( ; ; )
 	{
 		system("cls");//清屏
-		printf("\n请输入您的用户名：");
+		printf("\t\t\t\t\t#位置:主菜单->用户登录        \n\n");
 		scanf("%s",name);
 		i=findRecord(name,0,1,0);
 		if(i==-1)
@@ -44,6 +44,6 @@ void ad_login()
 		printf("\n登陆成功!\n按回车后继续");
 		getchar();
 		getchar();
-		ad_menu();//登陆之后的东西。	
+		ad_menu();//登陆之后的东西
 	} 
 }
