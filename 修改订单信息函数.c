@@ -4,7 +4,7 @@ void modify_order(int j)//修改订单信息函数
 {
 	int i;
 	int choice=-1;
-	loadRecords(3);
+//	loadRecords(3);
 	if(numOrders==0)	
 	{
 		printf("没有可供修改的记录");
@@ -14,7 +14,7 @@ void modify_order(int j)//修改订单信息函数
 	{
 		system("cls");//清屏
 		int mark=0;
-		queryInfo(3);
+//		queryInfo(3);
 		i=o_i[j];
 		showTable(3);
 		printf("\n%d.%s\t%s\t%d\t%s\t%s\t%s",j+1,o_records[i].name,o_records[i].brand,o_records[i].amount,o_records[i].phone,o_records[i].address,o_records[i].date);
@@ -22,7 +22,7 @@ void modify_order(int j)//修改订单信息函数
 		{
 			case 1:{
 				printf("\n请输入商品名称：");
-				scanf("%d",&o_records[i].name);
+				scanf("%s",&o_records[i].name);
 				mark=1;
 				break;
 			}break;
@@ -50,7 +50,7 @@ void modify_order(int j)//修改订单信息函数
 		}
 		if(mark==1)
 		{
-		//	saveRecords(3);
+			saveRecords(3);
 			printf("\n修改成功！\n输入回车后返回上一层") ;
 			getchar();
 			getchar();

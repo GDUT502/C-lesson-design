@@ -35,7 +35,7 @@ void show_my_o()//显示我的最近五个订单
 			{
 			//	j=(j+1)%N;//取模计数法，如j=0,N=5,那么新j=(0+1)%5=1..2..3..4..0..1..2..3..4..0..1; 
 			//	o_i[j]=i;
-				if(j<N) {
+				if(j<N-1) {
 					j++;
 					o_i[j]=i;
 				//	j++; 
@@ -49,7 +49,7 @@ void show_my_o()//显示我的最近五个订单
 				}
 			}
 		}
-		for(k=0;k<j+1;k++)
+		for(k=0;k<N;k++)
 		{
 			i=o_i[k];
 			printf("\n%d.%s\t%s\t%d\t%s\t%s\t%s",k+1,o_records[i].name,o_records[i].brand,o_records[i].amount,o_records[i].phone,o_records[i].address,o_records[i].date);

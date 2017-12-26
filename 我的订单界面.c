@@ -15,15 +15,14 @@ void my_order()//我的订单
 			case 2:{
 				show_my_o();
 				printf("请选择你要修改的订单：");
-				scanf("%d",j);
-				j=j-1;
-				modify_order(j);//修改订单信息函数 
+				scanf("%d",&j);//地址符
+				modify_order(j-1);//修改订单信息函数 
 				break;
 			};break;
 			case 3:{
 				show_my_o();
 				printf("请选择你要删除的订单：");
-				scanf("%d",j);
+				scanf("%d",&j);//地址符
 				removeOrder(j-1);
 				break;
 			};break;
