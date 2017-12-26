@@ -38,6 +38,7 @@ int s_my_order()//用户订单界面的选择
 	int choice=-1;
 //	while(choice!=0)
 //	{
+		system("cls");//清屏
 		printf("\t\t\t\t\t*************************************\n\n");
 		printf("\t\t\t\t\t**       >>>订水管理系统<<<         *\n\n");
 		printf("\t\t\t\t\t** 位置:主菜单->用户菜单->订单菜单 **\n\n");

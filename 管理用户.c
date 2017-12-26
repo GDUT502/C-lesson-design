@@ -19,7 +19,7 @@ void ad_user()//管理用户
 			case 5:clear_txt(choice);break;
 			case 9:mark=0;break;
 			case 0:quit();break;
-			default :printf("\n输入错误，请重新选择:\n输入回车后继续");getchar();getchar();
+			default :printf("\n\t\t\t╮(╯﹏╰）╭   你输入的操作不存在，请重新输入,输入回车键继续....");getchar();getchar();
 		}
 	}
 }
@@ -29,17 +29,21 @@ int s_ad_user()//管理用户的选择
 	int choice=-1;
 //	while(choice!=0)
 //	{
-		system("cls");//清屏
-		printf("用户信息菜单\n");
-		printf("1.显示所有用户信息\n");
-		printf("2.查找用户\n");
-		printf("3.修改用户信息\n");
-		printf("4.注销用户\n");
-		printf("5.清空用户信息\n");
-		printf("9.返回上一层\n");
-		printf("0.退出程序\n");
-		printf("\n输入数字进行选择:");
-		scanf("%d",&choice);
-		return choice;
+		
+	system("cls");//清屏
+	printf("\t\t\t\t\t*****************************************\n\n");
+	printf("\t\t\t\t\t**         >>>订水管理系统<<<           *\n\n");
+	printf("\t\t\t\t\t**位置:主菜单->管理员菜单->用户信息菜单**\n\n");
+	printf("\t\t\t\t\t**         1.显示所有用户信息          **\n\n");
+	printf("\t\t\t\t\t**         2.查找用户                  **\n\n");
+	printf("\t\t\t\t\t**         3.修改用户信息              **\n\n");
+	printf("\t\t\t\t\t**         4.注销用户                  **\n\n");
+	printf("\t\t\t\t\t**         5.清空用户信息              **\n\n");
+	printf("\t\t\t\t\t**         9.返回上一层                **\n\n");
+	printf("\t\t\t\t\t**         0.退出程序                  **\n\n");
+	printf("\t\t\t\t\t*****************************************\n\n");
+	printf("\t\t\t\t\t**     输入数字进行操作>>");
+	scanf("%d",&choice);
+	return choice;
 //}
  } 
