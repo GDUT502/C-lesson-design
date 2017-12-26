@@ -14,9 +14,9 @@ void add_order()//添加订单函数
 	printf("\t\t\t\t\t**     用户地址:%-15s         \n\n",o_temp.address);
 	printf("\t\t\t\t\t**     下单日期:%-15s         \n\n",o_temp.date);
 	printf("\t\t\t\t\t**     订购品牌:%-15s         \n\n",o_temp.brand);
-	printf("\t\t\t\t\t**     桶装水单价:%f元/桶\n\n",w_records[orderIndex-1].price);
+	printf("\t\t\t\t\t**     桶装水单价:%15.2f元/桶\n\n",w_records[orderIndex-1].price);
 	printf("\t\t\t\t\t**     订购数量:%-15d       \n\n",o_temp.amount);
-	printf("\t\t\t\t\t**     合计总价:%-15.2f       \n\n",w_records[orderIndex-1].price*o_temp.amount);
+	printf("\t\t\t\t\t**     合计总价:%-15.2f元       \n\n",w_records[orderIndex-1].price*o_temp.amount);
 	printf("\t\t\t\t\t*****************************************\n\n");
 	
 	

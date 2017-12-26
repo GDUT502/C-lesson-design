@@ -79,7 +79,7 @@ void display(int choice)//显示所有表内信息
 			showTable(choice);
 		}
 	}
-	printf("\n回车后继续...\n") ;
-	getchar();
-	getchar();
+//	printf("\n回车后继续...\n") ;
+//	getchar();
+//	getchar();
 }

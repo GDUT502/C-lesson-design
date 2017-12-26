@@ -62,7 +62,7 @@ extern char savedTag;//信息是否已经保存的标志，1为未保存，0为以保存
 extern int arraySize;////数组大小
 extern char*fname;//文件名字的指针 
 
-extern int u_i;//用户信息的序号
+extern int u_i;//已登录用户信息的序号
 extern int w_i;//商品信息的序号 
 extern int o_i[N];//订单信息的序号,用数组，最多记录最近N=5个订单。
 
