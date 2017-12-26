@@ -82,6 +82,8 @@ int s_u_menu();//用户菜单的选择
 void o_water();//订购商品函数 
 void my_order();//我的订单函数
 void show_my_o();//显示我的所有订单 
+void modify_my_o(int);//修改我的订单
+void remove_my_o(int);//删除我的订单 
 int s_my_order();//用户订单界面的选择 
 void my_info();//账户信息函数 
 int s_m_info();//账户信息选择 
