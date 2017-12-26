@@ -40,6 +40,7 @@ struct Order_info//订单结构体
 	char brand[50];//商品名称 
 	int amount;//订单数量 
 	float  total_prices;//商品总价 
+	int mark; 
 	char name[20];//下单用户
 	char phone[20];//用户电话 
 	char address[50];//送货地址
