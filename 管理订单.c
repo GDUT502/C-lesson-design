@@ -16,13 +16,13 @@ void ad_order()//管理订单
 			case 2:queryInfo(choice);break;
 			case 3:{
 				printf("\n请选择你要修改的订单：");
-				scanf("%d",j);
+				scanf("%d",&j);
 				modify_order(j-1);//修改订单信息函数 
 				break;
 			} break;
 			case 4:{
 				printf("\n请选择你要删除的订单：");
-				scanf("%d",j);
+				scanf("%d",&j);
 				removeOrder(j-1);
 				break;
 			}break;

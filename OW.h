@@ -45,9 +45,10 @@ struct Order_info//订单结构体
 };
 typedef struct Order_info OrInfo;
 
-extern int numUsers;//用户信息的数量 
-extern int numWaters;//商品信息的数量 
-extern int numOrders;//订单信息的数量 
+extern int numUsers;//用户信息的总数量 
+extern int numWaters;//商品信息的总数量 
+extern int numOrders;//订单信息的总数量 
+extern int orderIndex;//订购的商品序号 
 
 extern UserInfo* records;//记录用户信息的数组
 extern WtInfo* w_records;//记录商品信息的数组 
@@ -65,7 +66,8 @@ extern int u_i;//用户信息的序号
 extern int w_i;//商品信息的序号 
 extern int o_i[N];//订单信息的序号,用数组，最多记录最近N=5个订单。
 
-extern int land;//记录登录方式1为用户登录，4为管理员登录 
+extern int land;//记录登录方式1为用户登录，4为管理员登录
+extern char Time[20]; //当前的时间 按 年 月 日 时 排列 
 
 
 void rg_menu();//登录菜单
@@ -124,6 +126,7 @@ int s_m_water();//修改商品信息菜单的选择
 void modify_order(int);//修改订单信息函数  
 int s_m_order();//修改订单信息菜单的选择 
 
+void getConvTime();//获得最新时间和转换时间 更新全局变量 Time 
 void clear_txt(int);//清空文本 
 void quit();//退出程序
 

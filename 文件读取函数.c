@@ -46,7 +46,7 @@ int loadRecords(int choice)
 			return -1;
 		}
 		printf("\n读取文件中。。。\n");
-		while(!feof(fp))
+		while(!feof(fp))//检测是否读到文件尾 
 		{
 			//空间不足重新申请空间 
 			if(numWaters>=arraySize)

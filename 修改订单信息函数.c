@@ -50,7 +50,7 @@ void modify_order(int j)//修改订单信息函数
 		}
 		if(mark==1)
 		{
-		//	saveRecords(3);
+			saveRecords(3);
 			printf("\n修改成功！\n输入回车后返回上一层") ;
 			getchar();
 			getchar();
