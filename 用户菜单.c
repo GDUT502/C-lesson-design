@@ -26,6 +26,7 @@ int s_u_menu()//用户菜单的选择
 //	while(choice!=0)
 //	{
 		system("cls");//清屏
+		printf("%s,欢迎您！",records[u_i].name);
 		printf("\t\t\t\t\t*************************************\n\n");
 		printf("\t\t\t\t\t**       >>>订水管理系统<<<         *\n\n");
 		printf("\t\t\t\t\t** 位置:主菜单->用户菜单           **\n\n");

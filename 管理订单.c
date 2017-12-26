@@ -15,7 +15,7 @@ void ad_order()//管理订单
 			}break;
 			case 2:queryInfo(choice);break;
 			case 3:{
-				queryInfo(choice);
+				queryInfo(choice); 
 				printf("\n请选择你要修改的订单：");
 				scanf("%d",&j);
 				modify_order(j-1);//修改订单信息函数 
