@@ -98,7 +98,7 @@ void queryInfo(int choice)//查询指定信息函数
 				}
 			}
 		}
-		for(k=0;k<N;k++)
+		for(k=0;k<j+1;k++)
 		{
 			i=o_i[k];
 			printf("\n%d.%s\t%s\t%d\t%f\t%s\t%s\t%s",k+1,o_records[i].name,o_records[i].brand,o_records[i].amount,o_records[i].total_prices,o_records[i].phone,o_records[i].address,o_records[i].date);
