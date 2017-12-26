@@ -14,7 +14,7 @@ void display(int choice)//显示所有表内信息
 		showTable(choice);
 		for(i=0;i<num;i++)
 		{
-			printf("\n%s\t%s\t%s",records[i].name,records[i].phone,records[i].address);
+			printf("\t\t\t\t\t\n%s\t%s\t%s",records[i].name,records[i].phone,records[i].address);
 		}
 		//打印满10个信息后暂停一下 
 		if(i%10==0&&i!=0)
@@ -35,21 +35,25 @@ void display(int choice)//显示所有表内信息
 		{
 			printf("没有可供显示的记录！\n"); 
 		}
-		showTable(choice);
+		
+		printf("\t\t\t\t\t***********************************\n\n");
+		printf("\t\t\t\t\t**位置:主菜单->用户菜单->订购商品**\n\n");
+		printf("\t\t\t\t\t**        可订购的桶装水         **\n\n");
+		printf("\t\t\t\t\t**  商品名称           商品价格  **\n\n");
 		for(i=0;i<num;i++)
 		{
-			printf("%d.",i+1); //显示商品序号 
-			printf("%-15s%-5.1f元\n",w_records[i].brand,w_records[i].price);//
+			printf("\t\t\t\t\t**  %-d.%-8s         %-4.2f元   **\n\n",i+1,w_records[i].brand,w_records[i].price);//
 		}
+		printf("\t\t\t\t\t************************************\n\n");
 		//打印满10个信息后暂停一下 
-		if(i%10==0&&i!=0)
-		{
-			printf("回车后继续...\n") ;
-			getchar();
-			getchar();
-			printf("\n\n");
-			showTable(choice);
-		}
+//		if(i%10==0&&i!=0)
+//		{
+//			printf("回车后继续...\n") ;
+//			getchar();
+//			getchar();
+//			printf("\n\n");
+//			showTable(choice);
+//		}
 	}
 	if(choice==3) 
 	{

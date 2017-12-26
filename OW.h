@@ -41,7 +41,7 @@ struct Order_info//订单结构体
 	int amount;//订单数量 
 	char name[20];//下单用户
 	char phone[20];//用户电话 
-	char address[50];//送货地址 
+	char address[50];//送货地址
 };
 typedef struct Order_info OrInfo;
 

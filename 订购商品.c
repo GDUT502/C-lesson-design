@@ -4,32 +4,27 @@ void o_water()//订购商品
 {
 	int i,num;
 	i=u_i;
-//	time_t timep;//当前时间的获取 
-//	time(&timep);
-	getConvTime();//获得当前被时间 
-	showTable(2);//显示商品表头 
-	display(2);
-	
-	//输入需要订购的商品序号 
-	printf("\n请选择您要订购的商品序号：");
+	getConvTime();//获得和转换当前的时间
+	system("cls");//清屏 
+	display(2);//显示商品信息（包含表头） 
+	 
+	printf("\n\t\t\t O(∩_∩)O     请选择需要订购的商品序号>>");
 	scanf("%d",&num);
-		//检查商品序号是否错误 
+	//检查商品序号是否错误 
 	while((num<=0 )|| (num>numWaters)){
-		printf("你输入的订购序号不正确，请从新输入!"); 
-		printf("\n请选择您要订购的商品序号：");
+		printf("\n\t\t\t╮(╯﹏╰）╭  订购序号不存在，请从新输入>>");
 		scanf("%d",&num);
 	} 
 
 	strcpy(o_temp.brand,w_records[num-1].brand);
-	orderIndex = num;
+	orderIndex = num;//当前订购的商品序号 
 	
 	//输入订购的数量 
-	printf("\n请选择您要订购的数量:");
+	printf("\n\t\t\t O(∩_∩)O     请输入要订购的数量>>");
 	scanf("%d",&num);
 		//检查输入的数量 
 	while(num<=0){
-		printf("你输入的订购数量（>0）不正确，请从新输入");
-		printf("\n请选择您要订购的数量:");
+		printf("\n\t\t\t╮(╯﹏╰）╭  订购数量不正确，请从新输入>>");
 		scanf("%d",&num);
 	}
 	o_temp.amount = num;
