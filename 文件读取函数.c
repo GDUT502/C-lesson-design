@@ -42,10 +42,10 @@ int loadRecords(int choice)
 		fname=select_file(choice);
 		if((fp=fopen(fname,"rb"))==NULL)
 		{
-			printf("打不开文件！\n");
+			//printf("打不开文件！\n");
 			return -1;
 		}
-		printf("\n读取文件中。。。\n");
+		//printf("\n读取文件中。。。\n");
 		while(!feof(fp))//检测是否读到文件尾 
 		{
 			//空间不足重新申请空间 
@@ -63,7 +63,7 @@ int loadRecords(int choice)
 		}
 		
 		fclose(fp);
-		printf("现在共有%d条信息。",numWaters);
+		//printf("现在共有%d条信息。",numWaters);
 		return 0;
 		}	
 	if(choice==3)

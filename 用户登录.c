@@ -7,31 +7,35 @@ void user_login()
 	char name[20];
 	char password[30];
 	loadRecords(1);//读取用户信息文件 
+	
+	system("cls");//清屏
+	printf("\t\t\t\t\t#位置:主菜单->用户登录        \n\n");
+	
+	//输入用户名 
+	printf("\n\t\t\t O(∩_∩)O      请输入你的用户名>>");
+	scanf("%s",name);
 	for( ; ; )
 	{
-		system("cls");//清屏
-		printf("主菜单>>用户登录\n");
-		printf("\n请输入您的用户名：");
-		scanf("%s",name);
 		u_i=findRecord(name,0,1,0);//查找该用户名 
 		i=u_i;
 		if(i==-1)
 		{
-			printf("\n该用户名不存在，请重新输入\n按回车后继续：");
-			getchar();
-			getchar();
+			printf("\n\t\t\t╮(╯﹏╰）╭   用户不存在，请重新输入>>");
+			scanf("%s",name);
 		}
 		else break;
 	}
+	
+	//输入密码 
+	printf("\n\t\t\t O(∩_∩)O      请输入你的密码>>");
+	scanf("%s",password);
 	for( ; ; )
 	{
-		printf("\n请输入您的密码：");
-		scanf("%s",password);
+		
 		if(strcmp(password,records[i].password)!=0)
 		{	
-			printf("\n密码不正确，请重新输入：\n按回车后继续");
-			getchar();
-			getchar();
+			printf("\n\t\t\t╮(╯﹏╰）╭   密码不正确，请重新输入>>");
+			scanf("%s",password);
 		}
 		else 
 		{
@@ -42,7 +46,8 @@ void user_login()
 	if(mark==1)
 	{
 		land=1;
-		printf("\n登陆成功!\n按回车后继续");
+		printf("\n\t\t\t 罒ω罒      √√√√√登陆成功!√√√√√\n");
+		printf("\n\t\t\t\t\t按回车后继续...");
 		getchar();
 		getchar();
 		u_menu();//登陆之后的东西。

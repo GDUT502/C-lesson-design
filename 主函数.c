@@ -33,11 +33,12 @@ int main()
 	}
 	arraySize=INITIAL_SIZE;
 	printf("\n");
-	printf("\t***********************************\n");
-	printf("\t*            这是一个             *\n");
-	printf("\t*          订水管理系统           *\n");
-	printf("\t*         欢迎使用本系统          *\n");
-	printf("\t***********************************\n");
+	printf("\t\t\t\t\t********************************************\n\n");
+	printf("\t\t\t\t\t*              订水管理系统                *\n\n");
+	printf("\t\t\t\t\t*             欢迎使用本系统               *\n\n");
+	printf("\t\t\t\t\t*         C语言课程设计第五小组            *\n\n");
+	printf("\t\t\t\t\t*  郭冰冰、杜均锋、陈振森、陈振杰、陈敏珊  *\n\n");
+	printf("\t\t\t\t\t********************************************\n\n");
 	printf("\n回车后进入系统。。。");
 	getchar();
 	rg_menu();
