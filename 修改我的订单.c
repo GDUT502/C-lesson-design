@@ -1,6 +1,6 @@
-#include"OW.h"
+#include"OW.h" 
 
-void modify_order(int j)//修改订单信息函数 
+void modify_my_o(int j)//修改我的订单
 {
 	int i;
 	int choice=-1;
@@ -56,23 +56,4 @@ void modify_order(int j)//修改订单信息函数
 			getchar();
 		}
 	}
-}
-
-
-int s_m_order()//修改订单信息菜单的选择 
-{
-	int choice=-1;
-	while(choice!=0){
-//		system("cls");//清屏
-		printf("\n修改菜单");
-		printf("\n1.修改商品种类");
-		printf("\n2.修改数量");
-		printf("\n3.修改电话号码");
-		printf("\n4.修改收货地址");
-		printf("\n9.返回上一层");
-		printf("\n0.退出程序\n");
-		printf("\n输入数字进行选择:");
-		scanf("%d",&choice);
-		return choice;
-}
 }

@@ -39,6 +39,7 @@ struct Order_info//订单结构体
 	char date[30];//订单日期 
 	char brand[50];//商品名称 
 	int amount;//订单数量 
+	float  total_prices;//商品总价 
 	char name[20];//下单用户
 	char phone[20];//用户电话 
 	char address[50];//送货地址
@@ -82,6 +83,8 @@ int s_u_menu();//用户菜单的选择
 void o_water();//订购商品函数 
 void my_order();//我的订单函数
 void show_my_o();//显示我的所有订单 
+void modify_my_o(int);//修改我的订单
+void remove_my_o(int);//删除我的订单 
 int s_my_order();//用户订单界面的选择 
 void my_info();//账户信息函数 
 int s_m_info();//账户信息选择 

@@ -34,4 +34,5 @@ void o_water()//∂©π∫…Ã∆∑
 	strcpy(o_temp.phone,records[i].phone);
 	strcpy(o_temp.address,records[i].address);
 	strcpy(o_temp.date,Time);
+	o_temp.total_prices=o_temp.amount*w_records[orderIndex-1].price;
 }
