@@ -13,7 +13,7 @@ void modify_water()//修改商品信息函数
 	for( ;choice!=9; )
 	{
 		int mark=0;
-		queryInfo(2);
+		//queryInfo(2);
 		i=w_i;
 		switch(s_m_water())
 		{
@@ -31,7 +31,7 @@ void modify_water()//修改商品信息函数
 			}break;
 			case 9:choice=9;break;
 			case 0:quit() ;
-			default:printf("\n输入错误，请重新选择:\n输入回车后继续");getchar();getchar();
+			default:printf("\n\t\t\t╮(╯﹏╰）╭   你输入的操作不存在，请重新输入,输入回车键继续....");getchar();getchar();
 		}
 		if(mark==1)
 		{
@@ -49,15 +49,21 @@ int s_m_water()//修改商品信息菜单的选择
 {
 	int choice=-1;
 	while(choice!=0){
+		
 		system("cls");//清屏
-		printf("\n修改菜单");
-		printf("\n1.修改商品名称");
-		printf("\n2.修改商品价格");
-		printf("\n9.返回上一层");
-		printf("\n0.退出程序\n");
-		printf("\n输入数字进行选择:");
+		printf("\t\t\t\t\t*************************************\n\n");
+		printf("\t\t\t\t\t**       >>>订水管理系统<<<         *\n\n");
+		printf("\t\t\t\t\t**位置:主菜单->管理员菜单->修改商品**\n\n");
+		printf("\t\t\t\t\t**          1.修改商品名称         **\n\n");
+		printf("\t\t\t\t\t**          2.修改商品价格         **\n\n");
+		printf("\t\t\t\t\t**          9.返回上一层           **\n\n");
+		printf("\t\t\t\t\t**          0.退出程序             **\n\n");
+		printf("\t\t\t\t\t*************************************\n\n");
+		printf("\t\t\t\t\t**     输入数字进行操作>>");
 		scanf("%d",&choice);
 		return choice;
 }
+
+		
 }
  

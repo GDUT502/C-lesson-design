@@ -14,9 +14,9 @@ void add_order()//添加订单函数
 	printf("\t\t\t\t\t**     用户地址:%-15s         \n\n",o_temp.address);
 	printf("\t\t\t\t\t**     下单日期:%-15s         \n\n",o_temp.date);
 	printf("\t\t\t\t\t**     订购品牌:%-15s         \n\n",o_temp.brand);
-	printf("\t\t\t\t\t**     桶装水单价:%15.2f元/桶\n\n",w_records[orderIndex-1].price);
+	printf("\t\t\t\t\t**     桶装水单价:%-15.2f元/桶\n\n",w_records[orderIndex-1].price);
 	printf("\t\t\t\t\t**     订购数量:%-15d       \n\n",o_temp.amount);
-	printf("\t\t\t\t\t**     合计总价:%-15.2f元       \n\n",w_records[orderIndex-1].price*o_temp.amount);
+	printf("\t\t\t\t\t**     合计总价:%-15.2f元       \n\n",o_temp.total_prices);
 	printf("\t\t\t\t\t*****************************************\n\n");
 	
 	
@@ -36,7 +36,7 @@ void add_order()//添加订单函数
 		printf("\n\t\t\t\t罒ω罒      √√√√√下单成功!√√√√√\n\n");
 	}
 //	loadRecords(3);
-	printf("\n按回车后返回功能菜单...");
+	printf("\n\t\t\t 罒ω罒      按回车后返回功能菜单...");
 	getchar();
 	getchar();
 }

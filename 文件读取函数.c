@@ -12,7 +12,7 @@ int loadRecords(int choice)
 		fname=select_file(choice);
 		if((fp=fopen(fname,"rb"))==NULL)
 		{
-			printf("打不开文件！\n");
+			printf("\n\t\t\t╮(╯﹏╰）╭   打不开文件！");
 			return -1;
 		}
 		printf("\n读取文件中。。。\n");
@@ -24,7 +24,7 @@ int loadRecords(int choice)
 				records=realloc(records,(arraySize+INCR_SIZE)*sizeof(UserInfo));
 				if(records==NULL)
 				{
-					printf("读取失败!");
+					printf("\n\t\t\t╮(╯﹏╰）╭   读取失败!");
 					exit(-1);
 				}
 			}
@@ -34,7 +34,7 @@ int loadRecords(int choice)
 		if(choice==1) land=1;
 		if(choice==4) land=4;
 		fclose(fp);
-		printf("现在共有%d条信息。",numUsers);
+		//printf("现在共有%d条信息。",numUsers);
 		return 0;
 		}
 	if(choice==2)
@@ -54,7 +54,7 @@ int loadRecords(int choice)
 				w_records=realloc(w_records,(arraySize+INCR_SIZE)*sizeof(WtInfo));
 				if(w_records==NULL)
 				{
-					printf("读取失败!");
+					printf("\n\t\t\t╮(╯﹏╰）╭   读取失败!");
 					exit(-1);
 				}
 			}
@@ -71,10 +71,10 @@ int loadRecords(int choice)
 		fname=select_file(choice);
 		if((fp=fopen(fname,"rb"))==NULL)
 		{
-			printf("打不开文件！\n");
+			printf("\n\t\t\t╮(╯﹏╰）╭   打不开文件！");
 			return -1;
 		}
-		printf("\n读取文件中。。。\n");
+		//printf("\n读取文件中。。。\n");
 		while(!feof(fp))
 		{
 			//空间不足重新申请空间 
@@ -83,7 +83,7 @@ int loadRecords(int choice)
 				o_records=realloc(o_records,(arraySize+INCR_SIZE)*sizeof(OrInfo));
 				if(o_records==NULL)
 				{
-					printf("读取失败!");
+					printf("\n\t\t\t╮(╯﹏╰）╭   读取失败!");
 					exit(-1);
 				}
 			}
@@ -92,7 +92,7 @@ int loadRecords(int choice)
 		}
 		
 		fclose(fp);
-		printf("现在共有%d条信息。",numOrders);
+		//printf("现在共有%d条信息。",numOrders);
 		return 0;
 		}	
 }
