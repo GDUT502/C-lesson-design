@@ -15,3 +15,5 @@ int u_i;
 int w_i;
 int o_i[N];
 int land;
+int orderIndex;
+char Time[20];  

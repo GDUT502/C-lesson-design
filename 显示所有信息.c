@@ -26,6 +26,7 @@ void display(int choice)//显示所有表内信息
 			showTable(choice);
 		}
 	}
+	//打印商品信息 
 	if(choice==2) 
 	{
 		loadRecords(choice);//先读取所有信息 
@@ -37,7 +38,8 @@ void display(int choice)//显示所有表内信息
 		showTable(choice);
 		for(i=0;i<num;i++)
 		{
-			printf("\n%s\t%f",w_records[i].brand,w_records[i].price);
+			printf("%d.",i+1); //显示商品序号 
+			printf("%-15s%-5.1f元\n",w_records[i].brand,w_records[i].price);//
 		}
 		//打印满10个信息后暂停一下 
 		if(i%10==0&&i!=0)
@@ -58,9 +60,10 @@ void display(int choice)//显示所有表内信息
 			printf("没有可供显示的记录！\n"); 
 		}
 		showTable(choice);
+		//增加了订单总价格 
 		for(i=0;i<num;i++)
 		{
-			printf("\n%s\t%s\t%d\t%s\t%s\t%s",o_records[i].name,o_records[i].brand,o_records[i].amount,o_records[i].phone,o_records[i].address,o_records[i].date);
+			printf("\n%s\t%s\t%d\t%s\t%s\t%s%f元",o_records[i].name,o_records[i].brand,o_records[i].amount,o_records[i].phone,o_records[i].address,o_records[i].date,o_records[i].amount*w_records[i].price);
 		}
 		//打印满100个信息后暂停一下 
 		if(i%100==0&&i!=0)
