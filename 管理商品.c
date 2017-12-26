@@ -11,6 +11,8 @@ void ad_brand()//管理商品
 			case 1:{
 				showTable(choice);
 				display(choice);
+				getchar();
+				getchar();
 				break;
 			}break;
 			case 2:queryInfo(choice);break;

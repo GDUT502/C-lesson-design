@@ -17,7 +17,7 @@ void modify_order(int j)//修改订单信息函数
 //		queryInfo(3);
 		i=o_i[j];
 		showTable(3);
-		printf("\n%d.%s\t%s\t%d\t%s\t%s\t%s",j+1,o_records[i].name,o_records[i].brand,o_records[i].amount,o_records[i].phone,o_records[i].address,o_records[i].date);
+		printf("\n%d.%s\t%s\t%d\t%f\t%s\t%s\t%s",j+1,o_records[i].name,o_records[i].brand,o_records[i].amount,/*o_records[i].total_prices,*/o_records[i].phone,o_records[i].address,o_records[i].date);
 		switch(s_m_order())
 		{
 			case 1:{
@@ -29,6 +29,8 @@ void modify_order(int j)//修改订单信息函数
 			case 2:{
 				printf("\n请输入新的数量：");
 				scanf("%d",&o_records[i].amount);
+			//	w_i=findRecord(o_records[i].name,0,1,0);
+			//	o_records[i].total_prices=o_records[i].amount*w_records[w_i].price;
 				mark=1;
 				break;
 			}break;
@@ -44,6 +46,7 @@ void modify_order(int j)//修改订单信息函数
 				mark=1;
 				break;
 			}break;
+		//	case 5:o_records[i].mark=1;
 			case 9:choice=9;break;
 			case 0:quit() ;
 			default:printf("\n输入错误，请重新选择:\n输入回车后继续");getchar();getchar();
@@ -69,6 +72,7 @@ int s_m_order()//修改订单信息菜单的选择
 		printf("\n2.修改数量");
 		printf("\n3.修改电话号码");
 		printf("\n4.修改收货地址");
+		printf("\n5.确认商品已送达"); 
 		printf("\n9.返回上一层");
 		printf("\n0.退出程序\n");
 		printf("\n输入数字进行选择:");

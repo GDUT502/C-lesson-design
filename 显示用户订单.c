@@ -4,7 +4,7 @@ void show_my_o()//显示我的最近五个订单
 {
 	char target[50];
 //	char *p=target;
-	int i,j=0;
+	int i=0,j=0;
 	int k;
 	int choice=3;
 	loadRecords(choice);//先读取所有信息 
@@ -52,7 +52,7 @@ void show_my_o()//显示我的最近五个订单
 		for(k=0;k<N;k++)
 		{
 			i=o_i[k];
-			printf("\n%d.%s\t%s\t%d\t%s\t%s\t%s",k+1,o_records[i].name,o_records[i].brand,o_records[i].amount,o_records[i].phone,o_records[i].address,o_records[i].date);
+			printf("\n%d.%s\t%s\t%d\t%f\t%s\t%s\t%s",k+1,o_records[i].name,o_records[i].brand,o_records[i].amount,o_records[i].total_prices,o_records[i].phone,o_records[i].address,o_records[i].date);
 		}
 		printf("\n输入回车后继续：");
 		getchar();

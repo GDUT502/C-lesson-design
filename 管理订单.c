@@ -11,6 +11,8 @@ void ad_order()//π‹¿Ì∂©µ•
 		{
 			case 1:{
 				display(choice);
+				getchar();
+				getchar();
 				break;
 			}break;
 			case 2:queryInfo(choice);break;
